@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for user in cand %}
+{% if user.id > 1 %}
+<p>user {{user.name}}</p>
+<p>id {{user.id}}</p>
+<p>skills {{user.skills}}</p>
+{% endif %}
+{% endfor %}
+</body>
+</html>
