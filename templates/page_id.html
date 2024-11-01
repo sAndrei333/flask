@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 {% for user in cand %}
-{% if user.id > 1 %}
-<p>user {{user.name}}</p>
-<p>id {{user.id}}</p>
+{% if user.id==1 %}
+
+<p >user {{user.name}}</p>
+<br>
 <p>skills {{user.skills}}</p>
 {% endif %}
 {% endfor %}

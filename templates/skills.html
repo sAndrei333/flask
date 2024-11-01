@@ -5,15 +5,15 @@
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body class="right">
-
 {% for user in cand %}
-
-<p> user {{user.name}}</p>
-<p >id {{user.id}}</p>
-<p>skills {{user.skills}}</p>
-
+{% if skills in user.skills %}
+<p> user {{user.name}} </p>
+<br>
+<p> <img class="img" src="{{user.picture}}"> </p>
+<br>
+<p> id {{user.id}} </p>
+{% endif %}
 {% endfor %}
 </body>
 </html>
